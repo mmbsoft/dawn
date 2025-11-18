@@ -7,7 +7,6 @@ if (!customElements.get('shopify-question')) {
         const question = this.dataset.question;
         const nextLabel = this.dataset.nextLabel;
         const data = JSON.parse(this.dataset.answers);
-
         this.innerHTML = `
           <details class="quiz__step collapsible-content ${
             step === 1 ? '' : 'locked'
